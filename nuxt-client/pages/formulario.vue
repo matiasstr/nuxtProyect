@@ -1,36 +1,16 @@
 <template>
-    <v-app>
-        <v-form ref="form">
-            <v-container>
-                <v-row>
-                    <v-col cols="12" md="4">
-                        <v-text-field v-model="obj.firstname" :rules="nameRules" :counter="10" label="First name" required></v-text-field>
-                    </v-col>
-
-                    <v-col cols="12" md="4">
-                        <v-text-field v-model="obj.lastname" :rules="lastnameRules" :counter="10" label="Last name" required></v-text-field>
-                    </v-col>
-
-                    <v-col cols="12" md="4">
-                        <v-text-field v-model="obj.email" :rules="emailRules" label="E-mail" required></v-text-field>
-                        <v-text-field v-model="obj.genero" :rules="generoRules" label="Genero" required></v-text-field>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </v-form>
-        <v-btn class="mt-10"  :loading="loading" :disabled="loading" @click="submit">ACEPTAR</v-btn>
-        <v-btn class="mt-10" to="/" :disabled="loading">CANCELAR</v-btn>
-        <v-btn class="mt-10" to="/" :disabled="loading">A INDEX</v-btn>
-    </v-app>
+    <FormularioInput/>
 
 </template>
 
 <script>
+import FormularioInput from "@/components/FormularioInput.vue"
 
 
 export default {
-
-
+    components: {
+        FormularioInput
+    },
     data() {
 
         return {

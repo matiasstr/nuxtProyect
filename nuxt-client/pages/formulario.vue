@@ -1,5 +1,8 @@
 <template>
-    <FormularioInput/>
+    <v-app>
+        <FormularioInput/>
+
+    </v-app>
 
 </template>
 

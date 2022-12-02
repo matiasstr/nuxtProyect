@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -24,7 +25,7 @@ export default {
   plugins: [],
 
   loading: {
-    color: 'blue',
+    color: 'indigo',
     height: '10px'
   },
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,6 +43,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
